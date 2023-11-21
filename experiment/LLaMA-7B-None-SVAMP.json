@@ -1,0 +1,47 @@
+[
+    {
+        "instruction": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 32 crackers and 98 cakes initially. How many crackers did each person eat?",
+        "input": "",
+        "output": "\nA: Matthew gave equal numbers of crackers and cakes to his 4 friends. That means he gave 4 * (crackers + cakes) = 4 * (32 + 98) = 4 * 130 = 520 crackers and cakes in total. He had 32 crackers initially, so he gave 4 * 32 = 128 crackers in total. Each person ate 128 / 4 = 32 crackers. The answer is 32.",
+        "answer": "8.0",
+        "output_pred": "32 crackers and 98 cakes initially.\n\n                ### Explanation:\n                Matthew gave equal numbers of crackers and cakes to his 4 friends.\n                If he had 32 crackers and 98 cakes initially.\n                How many crackers did each person eat?\n\n                ### Explanation:\n                Matthew gave equal numbers of crackers and cakes to his 4 friends.\n                If he had 32 crackers and 98 cakes initially.\n                How many crackers did each person eat?\n\n                ### Explanation:\n                Matthew gave equal numbers of crackers and cakes to his 4 friends.\n                If he had 32 crackers and 98 cakes initially.\n                How many crackers did each person eat?\n\n                ### Explanation:\n                Matthew gave equal numbers of crackers and cakes to his 4 friends.\n                If he had 32 crackers and 98 cakes initially.\n                How many crackers did each person eat?\n\n                ### Explanation:\n                Matthew gave equal numbers of crackers and cakes to his 4",
+        "pred": 4.0,
+        "flag": false
+    },
+    {
+        "instruction": "In a school there are 569 girls and 236 boys. How many more girls than boys does the school have?",
+        "input": "",
+        "output": "\nA: There are 569 girls and 236 boys. The difference between them is 569 - 236 = 333. The school has 333 more girls than boys. The answer is 333.",
+        "answer": "333.0",
+        "output_pred": "333 girls and 236 boys.\n\n                ### Explanation:\n                There are 569 girls and 236 boys in the school.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 236.\n                The number of girls is 569 and the number of boys is 23",
+        "pred": 23.0,
+        "flag": false
+    },
+    {
+        "instruction": "Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening. How many more emails did Jack receive in the morning than in the evening?",
+        "input": "",
+        "output": "\nA: Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening. The difference between the number of emails he received in the morning and the number of emails he received in the evening is 9 - 7 = 2. The answer is 2.",
+        "answer": "2.0",
+        "output_pred": "2\n\n                ### Explanation:\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 10 emails in the afternoon and 7 emails in the evening.\n                Jack received 9 emails in the morning, 1",
+        "pred": 1.0,
+        "flag": false
+    },
+    {
+        "instruction": "Last week Fred had 114 dollars and Jason had 22 dollars. They washed cars over the weekend and now Fred has 21 dollars and Jason has 78 dollars. How much money did Jason make over the weekend?",
+        "input": "",
+        "output": "\nA: Fred had 114 dollars and Jason had 22 dollars. After the weekend, Fred has 21 dollars and Jason has 78 dollars. This means Fred lost 114 - 21 = 93 dollars and Jason gained 78 - 22 = 56 dollars. So Jason made 56 dollars over the weekend. The answer is 56.",
+        "answer": "56.0",
+        "output_pred": "114 + 22 = 136\n                136 - 21 = 115\n                115 + 78 = 193\n                193 - 21 = 172\n                172 + 78 = 250\n                250 - 21 = 229\n                229 + 78 = 307\n                307 - 21 = 286\n                286 + 78 = 364\n                364 - 21 = 343\n                343 + 78 = 421\n                421 - 21 = 400\n                400 + 78 = 478\n                478 - 21 = 457\n                457 + 78 = 535\n                535 - 21 = 514\n                514 + 78 = 592\n                592 - 21 = 571\n                571 +",
+        "pred": 571.0,
+        "flag": false
+    },
+    {
+        "instruction": "Paco had 8 sweet cookies and 6 salty cookies. He ate 20 sweet cookies and 34 salty cookies. How many more salty cookies than sweet cookies did he eat?",
+        "input": "",
+        "output": "\nA: Paco had 8 sweet cookies and 6 salty cookies. He ate 20 sweet cookies and 34 salty cookies. The difference between the number of salty and sweet cookies he ate is 34 - 20 = 14. He ate 14 more salty cookies than sweet cookies. The answer is 14.",
+        "answer": "14.0",
+        "output_pred": "20 - 8 = 12\n                34 - 6 = 28\n                28 - 12 = 16\n                16 - 8 = 8\n                8 - 20 = -12\n                12 - -12 = 24\n                24 - 16 = 8\n                8 - 8 = 0\n                0 - 24 = -24\n                24 - -24 = 48\n                48 - 8 = 40\n                40 - 16 = 24\n                24 - 24 = 0\n                0 - 24 = -24\n                24 - -24 = 48\n                48 - 8 = 40\n                40 - 16 = 24\n                24 - 24 = 0\n                0 - 24 = -24\n                24 - -24 = 48\n                48 - 8 = 40\n                40 - 16 = 24\n                24 - 24 = 0",
+        "pred": 0.0,
+        "flag": false
+    }
+]

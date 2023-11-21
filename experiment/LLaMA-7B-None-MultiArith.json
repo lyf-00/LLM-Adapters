@@ -1,0 +1,74 @@
+[
+    {
+        "instruction": " At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ",
+        "input": "",
+        "output": "\nA: Sam bought 13 adventure books and 17 mystery books. That means he bought 13 + 17 = 30 books in total. 15 of them were used, so he has 30 - 15 = 15 new books. The answer is 15.",
+        "answer": "15.0",
+        "output_pred": "If 15 of the books were used, how many new books did he buy?\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the books were used.\n                 15 of the",
+        "pred": 15.0,
+        "flag": true
+    },
+    {
+        "instruction": " Bianca was planting vegetables in her garden. She started with 52 seeds and planted 40 of them in the big garden and in each of her small gardens put 2 seeds each. How many small gardens did Bianca have? ",
+        "input": "",
+        "output": "\nA: Bianca planted 40 seeds in the big garden. She put 2 seeds in each of her small gardens. That means she had 40 / 2 = 20 small gardens. The answer is 20.",
+        "answer": "6.0",
+        "output_pred": "Bianca planted 40 seeds in the big garden and in each of her small gardens put 2 seeds each. So Bianca planted 40 seeds in the big garden and 80 seeds in her small gardens. So Bianca had 80 small gardens.\n\n                ### Instruction:\n                 Bianca was planting vegetables in her garden. She started with 52 seeds and planted 40 of them in the big garden and in each of her small gardens put 2 seeds each. How many small gardens did Bianca have?",
+        "pred": 2.0,
+        "flag": false
+    },
+    {
+        "instruction": " Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with? ",
+        "input": "",
+        "output": "\nA: Paige had 27 files. She deleted 9 of them, so now she has 27 - 9 = 18 files. She put 6 files in each folder, so she must have had 18 / 6 = 3 folders. The answer is 3.",
+        "answer": "3.0",
+        "output_pred": "Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with? \n\n                ### Instruction:\n                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?",
+        "pred": 6.0,
+        "flag": false
+    },
+    {
+        "instruction": " At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have? ",
+        "input": "",
+        "output": "\nA: Edward won 9 tickets. He spent 4 tickets on a beanie, so after that he has 9 - 4 = 5 tickets. Later he won 4 more tickets, so now he has 5 + 4 = 9 tickets. The answer is 9.",
+        "answer": "9.0",
+        "output_pred": "He would have 13 tickets. \n\n                ### Explanation:\n                 He spent 4 tickets on a beanie and later won 4 more tickets, so he would have 13 tickets. \n\n                ### Instruction:\n                 At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have?",
+        "pred": 4.0,
+        "flag": false
+    },
+    {
+        "instruction": " Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? ",
+        "input": "",
+        "output": "\nA: Cody had 45 dollars. He got 9 more dollars, so now he has 45 + 9 = 54 dollars. He spent 19 on a new game, so now he has 54 - 19 = 35 dollars. The answer is 35.",
+        "answer": "35.0",
+        "output_pred": "Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? \n                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 1",
+        "pred": 1.0,
+        "flag": false
+    },
+    {
+        "instruction": " A waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? ",
+        "input": "",
+        "output": "\nA: The waiter had 21 customers in his section. 12 of them left, so now he has 21 - 12 = 9 customers. Each table has 3 people, so the number of tables must be 9 / 3 = 3. The answer is 3.",
+        "answer": "3.0",
+        "output_pred": "The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? \n\n                ### Explanation:\n                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? \n                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? \n                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? \n                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have? \n                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table,",
+        "pred": 3.0,
+        "flag": true
+    },
+    {
+        "instruction": " A pet store had 56 puppies. In one day they sold 24 of them and put the rest into cages with 4 in each cage. How many cages did they use? ",
+        "input": "",
+        "output": "\nA: The pet store had 56 puppies. They sold 24 of them, so now they have 56 - 24 = 32 puppies. Each cage has 4 puppies, so they need 32 / 4 = 8 cages. The answer is 8.",
+        "answer": "8.0",
+        "output_pred": "They used 6 cages. \n\n                ### Explanation:\n                 They sold 24 puppies and put the rest into cages with 4 in each cage. They used 6 cages. \n\n        \"\"\"\n        cages = 0\n        for i in range(56):\n            if i < 24:\n                cages += 4\n            else:\n                cages += 1\n        print(cages)\n\n\nif __name__ == '__main__':\n    main()\n</s>",
+        "pred": 1.0,
+        "flag": false
+    },
+    {
+        "instruction": " Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish? ",
+        "input": "",
+        "output": "\nA: She bought 2 chairs and 2 tables. It took 8 minutes to put each piece together. So in total it took 8 * 4 = 32 minutes to finish. The answer is 32.",
+        "answer": "32.0",
+        "output_pred": "Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish? \n\n                ### Instruction:\n                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish?",
+        "pred": 8.0,
+        "flag": false
+    }
+]
