@@ -36,6 +36,7 @@ def main(
 
     def evaluate(
             instruction,
+            CoT=False,
             input=None,
             temperature=0.1,
             top_p=0.75,
@@ -44,7 +45,7 @@ def main(
             max_new_tokens=256,
             **kwargs,
     ):
-        prompt = generate_prompt(instruction, input)
+        prompt = generate_prompt(instruction, input, CoT=CoT)
         inputs = tokenizer(prompt, return_tensors="pt")
         input_ids = inputs["input_ids"].to(device)
         generation_config = GenerationConfig(
@@ -84,7 +85,7 @@ def main(
         print("Response:", evaluate(instruction))
         print()
     """
-    save_file = f'experiment/{args.model}-{args.adapter}-{args.dataset}.json'
+    save_file = f'experiment/{args.model}-{args.adapter}-{args.dataset}-{args.save_suffix}.json'
     create_dir('experiment/')
 
     dataset = load_data(args)
@@ -97,7 +98,7 @@ def main(
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
 
-        outputs = evaluate(instruction)
+        outputs = evaluate(instruction,args.use_CoT)
         label = data.get('answer')
         flag = False
         if args.dataset.lower() in ['aqua']:
@@ -138,26 +139,51 @@ def create_dir(dir_path):
     return
 
 
-def generate_prompt(instruction, input=None):
-    if input:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+def generate_prompt(instruction, input=None, CoT=False):
+    if CoT:
+        if input:
+            return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
-                ### Instruction:
-                {instruction}
+                    ### Instruction:
+                    {instruction}
 
-                ### Input:
-                {input}
+                    ### Input:
+                    {input}
+                    
+                    Let's think step by step
+                    
+                    ### Response:
+                    """  # noqa: E501
+        else:
+            return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request. 
 
-                ### Response:
-                """  # noqa: E501
+                    ### Instruction:
+                    {instruction}
+
+                    Let's think step by step
+                    
+                    ### Response:
+                    """  # noqa: E501
     else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request. 
+        if input:
+            return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
-                ### Instruction:
-                {instruction}
+                    ### Instruction:
+                    {instruction}
 
-                ### Response:
-                """  # noqa: E501
+                    ### Input:
+                    {input}
+
+                    ### Response:
+                    """  # noqa: E501
+        else:
+            return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request. 
+
+                    ### Instruction:
+                    {instruction}
+
+                    ### Response:
+                    """  # noqa: E501
 
 
 def load_data(args) -> list:
@@ -186,6 +212,8 @@ def parse_args():
     parser.add_argument('--base_model', required=True)
     parser.add_argument('--lora_weights', required=True)
     parser.add_argument('--load_8bit', action='store_true', default=False)
+    parser.add_argument('--save-suffix', type=str,default=None)
+    parser.add_argument('--use_CoT',action="store_true",default=False)
 
     return parser.parse_args()
 
@@ -205,6 +233,8 @@ def load_model(args) -> tuple:
     lora_weights = args.lora_weights
     if not lora_weights:
         raise ValueError(f'can not find lora weight, the value is: {lora_weights}')
+    # if not lora_weights:
+    #     print('WARNING! DO NOT GIVE LORA WEIGHT')
 
     load_8bit = args.load_8bit
     if args.model == 'LLaMA-7B':
@@ -219,12 +249,15 @@ def load_model(args) -> tuple:
             device_map="auto",
             trust_remote_code=True,
         ) # fix zwq
+        # if lora_weights:
         model = PeftModel.from_pretrained(
             model,
             lora_weights,
             torch_dtype=torch.float16,
             device_map={"":0}
         )
+        # else:
+            # print('WARNING! DO NOT LOAD LORA WEIGHT')
     elif device == "mps":
         model = AutoModelForCausalLM.from_pretrained(
             base_model,
